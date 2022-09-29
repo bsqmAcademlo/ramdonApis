@@ -17,6 +17,10 @@ async function getQuotes() {
         author.style.color = colors[numberColor];
 
         document.body.style.background = colors[numberColor];
+
+        setTimeout(() => {
+            box.style.transform = "scale(1)";
+        }, 500);
     } catch (error) {
         console.log(error);
     }
@@ -27,7 +31,9 @@ function numberRandom(max) {
 }
 
 box.addEventListener("click", () => {
+    box.style.transform = "scale(0)";
     getQuotes();
 });
 
+box.style.transform = "scale(1)";
 getQuotes();

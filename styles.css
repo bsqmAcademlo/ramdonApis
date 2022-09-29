@@ -12,6 +12,8 @@ body {
     min-height: 100vh;
 
     padding: 1rem;
+
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .box {
@@ -26,6 +28,8 @@ body {
 
     cursor: pointer;
     transition: box-shadow 0.5s, transform 0.5s;
+
+    transform: scale(0);
 }
 
 .box:hover {
